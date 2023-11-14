@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6c1-xO-jtf">
+            <objects>
+                <navigationController id="JyF-Ne-cTX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="egb-c1-5kQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="36E-fp-r6c" kind="relationship" relationship="rootViewController" id="XVv-7a-1Dm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFk-4q-NCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1766" y="4"/>
+        </scene>
+        <!--See Long Message View Controller-->
+        <scene sceneID="Zmp-8u-MmV">
+            <objects>
+                <viewController storyboardIdentifier="SeeLongMessageViewController" id="36E-fp-r6c" customClass="SeeLongMessageViewController" customModule="homelax_ultra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kew-x7-nXq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="172-8Z-SMV">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vA-Jb-wvF">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43r-ou-r5g">
+                                                <rect key="frame" x="10" y="60" width="373" height="500"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="500" id="8qg-Sk-I84"/>
+                                                </constraints>
+                                                <attributedString key="attributedText"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="43r-ou-r5g" secondAttribute="trailing" constant="10" id="44O-uH-SNq"/>
+                                            <constraint firstAttribute="height" constant="800" id="HYH-WQ-nkw"/>
+                                            <constraint firstItem="43r-ou-r5g" firstAttribute="leading" secondItem="4vA-Jb-wvF" secondAttribute="leading" constant="10" id="hym-8S-ICW"/>
+                                            <constraint firstItem="43r-ou-r5g" firstAttribute="top" secondItem="4vA-Jb-wvF" secondAttribute="top" constant="60" id="wfQ-ff-gI6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4vA-Jb-wvF" secondAttribute="trailing" id="6sx-hG-Sfn"/>
+                                    <constraint firstItem="4vA-Jb-wvF" firstAttribute="leading" secondItem="172-8Z-SMV" secondAttribute="leading" id="7Hx-kc-nfk"/>
+                                    <constraint firstItem="4vA-Jb-wvF" firstAttribute="top" secondItem="172-8Z-SMV" secondAttribute="top" id="BOP-JN-pbu"/>
+                                    <constraint firstItem="4vA-Jb-wvF" firstAttribute="width" secondItem="172-8Z-SMV" secondAttribute="width" id="FOJ-c6-wOy"/>
+                                    <constraint firstAttribute="bottom" secondItem="4vA-Jb-wvF" secondAttribute="bottom" id="iax-uz-bnA"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="kwx-y2-feF"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="AMI-QL-7YU"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IFC-Ck-a5P"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.82745098039999998" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="172-8Z-SMV" firstAttribute="top" secondItem="IFC-Ck-a5P" secondAttribute="top" id="Hou-Na-vv1"/>
+                            <constraint firstItem="IFC-Ck-a5P" firstAttribute="trailing" secondItem="172-8Z-SMV" secondAttribute="trailing" id="Lf6-Dm-oIk"/>
+                            <constraint firstItem="IFC-Ck-a5P" firstAttribute="bottom" secondItem="172-8Z-SMV" secondAttribute="bottom" id="gtj-Ov-ED2"/>
+                            <constraint firstItem="172-8Z-SMV" firstAttribute="leading" secondItem="IFC-Ck-a5P" secondAttribute="leading" id="tBx-CU-zMo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Gv-Ys-mh0">
+                        <barButtonItem key="rightBarButtonItem" title="閉じる" id="jmO-u0-0oV">
+                            <connections>
+                                <action selector="closeButton:" destination="36E-fp-r6c" id="UkS-YI-01t"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="393" height="852"/>
+                    <connections>
+                        <outlet property="longMessageTextView" destination="43r-ou-r5g" id="ccW-R3-CYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bl4-I3-aiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-747.32824427480909" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>

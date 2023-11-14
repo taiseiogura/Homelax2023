@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="fRI-Q4-QTx">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ztN-cs-82U" customClass="SignInViewController" customModule="homelax_ultra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xRI-ut-zpo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSA-Bq-wMb">
+                                <rect key="frame" x="30" y="309" width="333" height="34"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス（学校用）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeh-l6-DjE">
+                                <rect key="frame" x="30" y="278" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJW-GA-BtN">
+                                <rect key="frame" x="30" y="409" width="333" height="34"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWw-K0-s8K">
+                                <rect key="frame" x="30" y="378" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsk-9p-enj">
+                                <rect key="frame" x="146.66666666666666" y="509" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.63529411759999999" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fhW-PO-5eT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログイン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSp-a7-ibC">
+                                <rect key="frame" x="138.66666666666666" y="194" width="116" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRL-2F-ns1">
+                                <rect key="frame" x="94.666666666666686" y="574" width="204" height="28"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="まだアカウントを持っていない場合">
+                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="11"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="yetNoAccountButton:" destination="ztN-cs-82U" eventType="touchUpInside" id="JMJ-56-WQO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレスとパスワードをもう一度確認してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhM-Z2-aHk">
+                                <rect key="frame" x="72" y="463" width="249" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NH0-MW-svc"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.82745098039215681" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xsk-9p-enj" firstAttribute="centerX" secondItem="xRI-ut-zpo" secondAttribute="centerX" id="2xY-CL-AJf"/>
+                            <constraint firstItem="PWw-K0-s8K" firstAttribute="top" secondItem="jSA-Bq-wMb" secondAttribute="bottom" constant="35" id="7DI-K2-zpW"/>
+                            <constraint firstItem="eJW-GA-BtN" firstAttribute="centerY" secondItem="xRI-ut-zpo" secondAttribute="centerY" id="8yx-U5-iCa"/>
+                            <constraint firstItem="jSA-Bq-wMb" firstAttribute="top" secondItem="Aeh-l6-DjE" secondAttribute="bottom" constant="10" id="AHM-UH-L6C"/>
+                            <constraint firstItem="jSA-Bq-wMb" firstAttribute="centerX" secondItem="xRI-ut-zpo" secondAttribute="centerX" id="BR5-8K-0CW"/>
+                            <constraint firstItem="Aeh-l6-DjE" firstAttribute="top" secondItem="mSp-a7-ibC" secondAttribute="bottom" constant="50" id="Dn3-cZ-Ojf"/>
+                            <constraint firstItem="eJW-GA-BtN" firstAttribute="centerX" secondItem="xRI-ut-zpo" secondAttribute="centerX" id="XjB-zH-gOF"/>
+                            <constraint firstItem="eJW-GA-BtN" firstAttribute="leading" secondItem="NH0-MW-svc" secondAttribute="leading" constant="30" id="Zim-nS-stK"/>
+                            <constraint firstItem="eJW-GA-BtN" firstAttribute="top" secondItem="PWw-K0-s8K" secondAttribute="bottom" constant="10" id="aet-f3-Bmq"/>
+                            <constraint firstItem="DRL-2F-ns1" firstAttribute="centerX" secondItem="xRI-ut-zpo" secondAttribute="centerX" id="dKz-4p-iej"/>
+                            <constraint firstItem="jSA-Bq-wMb" firstAttribute="leading" secondItem="NH0-MW-svc" secondAttribute="leading" constant="30" id="fxP-2J-GQB"/>
+                            <constraint firstItem="Xsk-9p-enj" firstAttribute="centerY" secondItem="AhM-Z2-aHk" secondAttribute="bottom" constant="50" id="kQK-Vn-iGt"/>
+                            <constraint firstItem="AhM-Z2-aHk" firstAttribute="top" secondItem="eJW-GA-BtN" secondAttribute="bottom" constant="20" id="nDw-K1-E7s"/>
+                            <constraint firstItem="mSp-a7-ibC" firstAttribute="centerX" secondItem="xRI-ut-zpo" secondAttribute="centerX" id="nGh-AY-WEq"/>
+                            <constraint firstItem="PWw-K0-s8K" firstAttribute="leading" secondItem="NH0-MW-svc" secondAttribute="leading" constant="30" id="qXT-bT-3DN"/>
+                            <constraint firstItem="AhM-Z2-aHk" firstAttribute="centerX" secondItem="xRI-ut-zpo" secondAttribute="centerX" id="qfK-wC-k7z"/>
+                            <constraint firstItem="DRL-2F-ns1" firstAttribute="top" secondItem="Xsk-9p-enj" secondAttribute="centerY" constant="50" id="rqt-Ho-WWd"/>
+                            <constraint firstItem="Aeh-l6-DjE" firstAttribute="leading" secondItem="NH0-MW-svc" secondAttribute="leading" constant="30" id="xvC-l4-Diu"/>
+                            <constraint firstItem="eJW-GA-BtN" firstAttribute="top" secondItem="PWw-K0-s8K" secondAttribute="bottom" constant="10" id="yre-MN-D8z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jh4-tU-stO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="jSA-Bq-wMb" id="DgI-9t-VEU"/>
+                        <outlet property="errButton" destination="AhM-Z2-aHk" id="Bgq-Yy-oaE"/>
+                        <outlet property="passwordTextField" destination="eJW-GA-BtN" id="qwY-QM-uaK"/>
+                        <outlet property="signInButton" destination="Xsk-9p-enj" id="mI7-cM-Zso"/>
+                        <outlet property="signInLabel" destination="mSp-a7-ibC" id="PyY-Yd-UtJ"/>
+                        <outlet property="yetNoAccountButton" destination="DRL-2F-ns1" id="kIC-An-c16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V34-XX-n3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

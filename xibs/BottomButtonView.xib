@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomButtonView" customModule="homelax_ultra" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundImage" destination="JR1-Bf-uui" id="KMu-Wr-MOt"/>
+                <outlet property="infoButton" destination="fg2-x3-ler" id="DNn-li-nIZ"/>
+                <outlet property="infoLabel" destination="Z7R-XE-5oT" id="Cnc-Zo-kDt"/>
+                <outlet property="messageLogButton" destination="kFD-bT-ySo" id="S0t-3y-moi"/>
+                <outlet property="messagesSentButton" destination="ooy-4O-qXh" id="ZvF-tQ-ISK"/>
+                <outlet property="receivedLabel" destination="GE8-h7-0vr" id="7Gb-dP-Jlz"/>
+                <outlet property="sendButton" destination="Szu-LG-JMo" id="Z6t-Ks-u2G"/>
+                <outlet property="sentLabel" destination="QLb-p0-ItN" id="NGV-1L-pDf"/>
+                <outlet property="settingButton" destination="2fv-y7-4C6" id="9LY-HF-RoM"/>
+                <outlet property="settingLabel" destination="BbG-cU-uRv" id="nCQ-4v-D14"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="ellipsis.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JR1-Bf-uui">
+                    <rect key="frame" x="-250" y="8" width="900" height="298.66666666666669"/>
+                    <color key="tintColor" red="0.87843137250000003" green="0.70980392160000005" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="900" id="I3f-Vu-rST"/>
+                        <constraint firstAttribute="height" constant="300" id="QS2-nN-jO6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="届いた言葉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GE8-h7-0vr">
+                    <rect key="frame" x="85" y="58" width="50" height="10"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7R-XE-5oT">
+                    <rect key="frame" x="277" y="58" width="26" height="10"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送った言葉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-p0-ItN">
+                    <rect key="frame" x="20" y="58" width="50" height="10"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-cU-uRv">
+                    <rect key="frame" x="345" y="58" width="20" height="10"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szu-LG-JMo">
+                    <rect key="frame" x="165" y="-7" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Z5K-be-Bga"/>
+                        <constraint firstAttribute="width" constant="70" id="mlA-Ee-jB3"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="sendImage.fill" backgroundImage="sendImage"/>
+                    <connections>
+                        <action selector="tappedSendButton:" destination="-1" eventType="touchUpInside" id="Te0-hq-tWZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFD-bT-ySo">
+                    <rect key="frame" x="95" y="22.999999999999996" width="30" height="29.333333333333332"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZFo-I4-Gb5"/>
+                        <constraint firstAttribute="width" constant="30" id="hDU-Ov-Dts"/>
+                    </constraints>
+                    <color key="tintColor" red="0.2941176593" green="0.2941176593" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="gift" catalog="system"/>
+                    <connections>
+                        <action selector="tappedReceivedMessageButton:" destination="-1" eventType="touchUpInside" id="TfW-eW-fpa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-x3-ler">
+                    <rect key="frame" x="275" y="24.333333333333336" width="30" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="LPZ-aN-i5g"/>
+                        <constraint firstAttribute="height" constant="30" id="xMy-4S-UQo"/>
+                    </constraints>
+                    <color key="tintColor" red="0.2941176593" green="0.2941176593" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="info.bubble" catalog="system"/>
+                    <connections>
+                        <action selector="tappedInfoButton:" destination="-1" eventType="touchUpInside" id="gMw-JR-znw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-4O-qXh">
+                    <rect key="frame" x="30" y="23.666666666666664" width="30" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XrE-t3-PMd"/>
+                        <constraint firstAttribute="width" constant="30" id="jDg-in-aXu"/>
+                    </constraints>
+                    <color key="tintColor" red="0.2941176593" green="0.2941176593" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="bell.badge" catalog="system"/>
+                    <connections>
+                        <action selector="tappedSentMessageButton:" destination="-1" eventType="touchUpInside" id="uEn-cn-el5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-y7-4C6">
+                    <rect key="frame" x="340" y="24" width="30" height="28.666666666666671"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="J2a-cT-WfA"/>
+                        <constraint firstAttribute="height" constant="30" id="qah-7k-5xV"/>
+                    </constraints>
+                    <color key="tintColor" red="0.2941176593" green="0.2941176593" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="gear.circle" catalog="system"/>
+                    <connections>
+                        <action selector="tappedSettingsButton:" destination="-1" eventType="touchUpInside" id="vaD-jA-edj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="2fv-y7-4C6" firstAttribute="bottom" secondItem="fg2-x3-ler" secondAttribute="bottom" id="6o5-Ma-YEj"/>
+                <constraint firstItem="kFD-bT-ySo" firstAttribute="leading" secondItem="ooy-4O-qXh" secondAttribute="trailing" constant="35" id="7aP-tZ-1rh"/>
+                <constraint firstItem="BbG-cU-uRv" firstAttribute="bottom" secondItem="Z7R-XE-5oT" secondAttribute="bottom" id="CNa-CY-9Wi"/>
+                <constraint firstItem="JR1-Bf-uui" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IFG-jU-Fxk"/>
+                <constraint firstItem="fg2-x3-ler" firstAttribute="centerX" secondItem="Z7R-XE-5oT" secondAttribute="centerX" id="Ni1-DN-SUK"/>
+                <constraint firstAttribute="bottom" secondItem="GE8-h7-0vr" secondAttribute="bottom" constant="30" id="Osc-WF-DTZ"/>
+                <constraint firstItem="fg2-x3-ler" firstAttribute="leading" secondItem="Szu-LG-JMo" secondAttribute="trailing" constant="40" id="Sw2-ru-9sO"/>
+                <constraint firstItem="GE8-h7-0vr" firstAttribute="bottom" secondItem="QLb-p0-ItN" secondAttribute="bottom" id="Wmp-jN-Zjo"/>
+                <constraint firstItem="Z7R-XE-5oT" firstAttribute="top" secondItem="fg2-x3-ler" secondAttribute="bottom" constant="5" id="XyA-pB-bgB"/>
+                <constraint firstItem="kFD-bT-ySo" firstAttribute="bottom" secondItem="ooy-4O-qXh" secondAttribute="bottom" id="Zhi-qe-IXm"/>
+                <constraint firstItem="2fv-y7-4C6" firstAttribute="leading" secondItem="fg2-x3-ler" secondAttribute="trailing" constant="35" id="aJn-rB-Xmo"/>
+                <constraint firstItem="2fv-y7-4C6" firstAttribute="centerX" secondItem="BbG-cU-uRv" secondAttribute="centerX" id="bM5-Rb-z5x"/>
+                <constraint firstItem="QLb-p0-ItN" firstAttribute="centerX" secondItem="ooy-4O-qXh" secondAttribute="centerX" id="cBx-kt-1Vs"/>
+                <constraint firstItem="fg2-x3-ler" firstAttribute="centerY" secondItem="Szu-LG-JMo" secondAttribute="centerY" constant="10" id="h4Q-5w-a4A"/>
+                <constraint firstItem="GE8-h7-0vr" firstAttribute="top" secondItem="kFD-bT-ySo" secondAttribute="bottom" constant="5" id="jRT-5K-jTo"/>
+                <constraint firstItem="Szu-LG-JMo" firstAttribute="leading" secondItem="kFD-bT-ySo" secondAttribute="trailing" constant="40" id="pw5-f8-h1G"/>
+                <constraint firstItem="GE8-h7-0vr" firstAttribute="centerX" secondItem="kFD-bT-ySo" secondAttribute="centerX" id="sby-ak-9gs"/>
+                <constraint firstItem="JR1-Bf-uui" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sdG-eh-l4g"/>
+                <constraint firstItem="JR1-Bf-uui" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7.0000000000000018" id="siH-0f-iC8"/>
+                <constraint firstItem="Szu-LG-JMo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v6b-qC-eVu"/>
+                <constraint firstItem="Szu-LG-JMo" firstAttribute="centerY" secondItem="kFD-bT-ySo" secondAttribute="centerY" constant="-10" id="vlb-2a-PkE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="203.0534351145038" y="-224.64788732394368"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="503-zo-WZV">
+            <rect key="frame" x="0.0" y="0.0" width="35" height="8"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <attributedString key="attributedText">
+                <fragment content="相手を選ぶ">
+                    <attributes>
+                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" metaFont="system" size="7"/>
+                        <font key="NSOriginalFont" size="8" name="AndaleMono"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+            </attributedString>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="178" y="392"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="bell.badge" catalog="system" width="125" height="128"/>
+        <image name="ellipsis.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="gear.circle" catalog="system" width="128" height="123"/>
+        <image name="gift" catalog="system" width="128" height="125"/>
+        <image name="info.bubble" catalog="system" width="128" height="110"/>
+        <image name="sendImage" width="512" height="512"/>
+        <image name="sendImage.fill" width="512" height="512"/>
+    </resources>
+</document>

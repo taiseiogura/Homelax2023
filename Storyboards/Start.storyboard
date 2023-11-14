@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="Yea-EP-NiS">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" id="V7W-u8-nTb" customClass="StartViewController" customModule="homelax_ultra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lp0-dh-PBy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_hey_email_liaa" translatesAutoresizingMaskIntoConstraints="NO" id="CWB-Bh-bTV">
+                                <rect key="frame" x="41.666666666666657" y="351" width="310" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Qr3-Qg-8lK"/>
+                                    <constraint firstAttribute="width" secondItem="CWB-Bh-bTV" secondAttribute="height" multiplier="31:15" id="lRP-EI-QR3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面をタップしてください" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY8-Du-I2e">
+                                <rect key="frame" x="92.666666666666686" y="581" width="208" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="WQf-VS-fZQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fKZ-9C-szO"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.82745098039999998" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CWB-Bh-bTV" firstAttribute="centerY" secondItem="Lp0-dh-PBy" secondAttribute="centerY" id="HQP-qq-Z7B"/>
+                            <constraint firstItem="kY8-Du-I2e" firstAttribute="top" secondItem="CWB-Bh-bTV" secondAttribute="bottom" constant="80" id="I8h-OW-F7M"/>
+                            <constraint firstItem="kY8-Du-I2e" firstAttribute="centerX" secondItem="Lp0-dh-PBy" secondAttribute="centerX" id="JHO-am-bjC"/>
+                            <constraint firstItem="CWB-Bh-bTV" firstAttribute="centerX" secondItem="Lp0-dh-PBy" secondAttribute="centerX" id="UGP-6C-mda"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="kY8-Du-I2e" id="Phu-md-xRj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybn-Ul-hz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="undraw_hey_email_liaa" width="310.66665649414062" height="215.66667175292969"/>
+    </resources>
+</document>
