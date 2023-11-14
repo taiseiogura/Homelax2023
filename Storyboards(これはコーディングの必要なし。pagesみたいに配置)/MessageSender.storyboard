@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ZenMaruGothic-Medium.ttf">
+            <string>ZenMaruGothic-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Message Sender View Controller-->
+        <scene sceneID="xYv-w5-xIm">
+            <objects>
+                <viewController storyboardIdentifier="MessageSenderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EZv-o1-aU4" customClass="MessageSenderViewController" customModule="homelax_ultra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wne-L8-3uU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯◯◯◯さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-kA-pIW">
+                                <rect key="frame" x="76.666666666666686" y="239.33333333333334" width="240" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" name="ZenMaruGothic-Medium" family="Zen Maru Gothic" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdK-cp-Eug">
+                                <rect key="frame" x="40" y="495.66666666666674" width="313" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ipsum lorem aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WH-ze-86W">
+                                <rect key="frame" x="30" y="426" width="333" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZC-pY-gO2">
+                                <rect key="frame" x="138" y="349" width="117.33333333333331" height="20.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="       ">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="名前を公開">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFV-Zs-A9z">
+                                <rect key="frame" x="121.66666666666669" y="344" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Fn-6m-OZg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="9U8-2g-Q60"/>
+                                    <constraint firstAttribute="width" constant="150" id="rcL-Xw-kra"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="EZv-o1-aU4" eventType="touchUpInside" id="8nj-L6-qVc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_false" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-bC-B0h">
+                                <rect key="frame" x="138" y="346.66666666666669" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="6GS-Fx-3OG"/>
+                                    <constraint firstAttribute="width" secondItem="EMU-bC-B0h" secondAttribute="height" multiplier="1:1" id="rRd-HK-YZA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※チェックすると自分の名前が相手に伝わります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is3-ca-ZVd">
+                                <rect key="frame" x="58.333333333333343" y="391.66666666666669" width="276.66666666666663" height="14.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4q-Hl-yP2">
+                                <rect key="frame" x="181.66666666666666" y="303" width="30" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="更新">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadButton:" destination="EZv-o1-aU4" eventType="touchUpInside" id="Jpx-iF-Q2O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fsw-E3-YBX"/>
+                        <color key="backgroundColor" red="0.89803922179999995" green="0.82671983930000004" blue="0.69549901540000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5Fu-kA-pIW" firstAttribute="centerX" secondItem="Wne-L8-3uU" secondAttribute="centerX" id="3wX-gx-cd5"/>
+                            <constraint firstItem="is3-ca-ZVd" firstAttribute="top" secondItem="EMU-bC-B0h" secondAttribute="bottom" constant="20" id="CqX-v9-qb8"/>
+                            <constraint firstItem="t4q-Hl-yP2" firstAttribute="centerX" secondItem="Wne-L8-3uU" secondAttribute="centerX" id="HRB-uX-K2W"/>
+                            <constraint firstItem="4WH-ze-86W" firstAttribute="centerX" secondItem="Wne-L8-3uU" secondAttribute="centerX" id="IoB-lM-HLO"/>
+                            <constraint firstItem="4WH-ze-86W" firstAttribute="top" secondItem="is3-ca-ZVd" secondAttribute="bottom" constant="20" id="JwJ-lR-5Ka"/>
+                            <constraint firstItem="eFV-Zs-A9z" firstAttribute="centerY" secondItem="pZC-pY-gO2" secondAttribute="centerY" id="OEm-fQ-Jal"/>
+                            <constraint firstItem="t4q-Hl-yP2" firstAttribute="top" secondItem="5Fu-kA-pIW" secondAttribute="bottom" constant="17" id="Tze-Wq-dYd"/>
+                            <constraint firstItem="4WH-ze-86W" firstAttribute="leading" secondItem="fsw-E3-YBX" secondAttribute="leading" constant="30" id="WPp-27-1kL"/>
+                            <constraint firstItem="eFV-Zs-A9z" firstAttribute="centerX" secondItem="Wne-L8-3uU" secondAttribute="centerX" id="dPB-ep-6jp"/>
+                            <constraint firstItem="eFV-Zs-A9z" firstAttribute="top" secondItem="t4q-Hl-yP2" secondAttribute="bottom" constant="15" id="efn-uY-CnE"/>
+                            <constraint firstItem="pZC-pY-gO2" firstAttribute="centerY" secondItem="EMU-bC-B0h" secondAttribute="centerY" id="jaJ-Ua-fme"/>
+                            <constraint firstItem="fsw-E3-YBX" firstAttribute="trailing" secondItem="4WH-ze-86W" secondAttribute="trailing" constant="30" id="jzu-Ue-cLY"/>
+                            <constraint firstItem="is3-ca-ZVd" firstAttribute="centerX" secondItem="Wne-L8-3uU" secondAttribute="centerX" id="lhg-5Y-XTY"/>
+                            <constraint firstItem="EMU-bC-B0h" firstAttribute="centerX" secondItem="Wne-L8-3uU" secondAttribute="centerX" constant="-46" id="tPK-bw-z76"/>
+                            <constraint firstItem="pZC-pY-gO2" firstAttribute="centerX" secondItem="Wne-L8-3uU" secondAttribute="centerX" id="xEW-cQ-c3R"/>
+                            <constraint firstItem="4WH-ze-86W" firstAttribute="centerY" secondItem="Wne-L8-3uU" secondAttribute="centerY" constant="10" id="zbM-bK-0qg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nfD-QD-x27"/>
+                    <connections>
+                        <outlet property="byCheckingLabel" destination="is3-ca-ZVd" id="G2m-zr-165"/>
+                        <outlet property="confirmLabel" destination="4WH-ze-86W" id="kc4-Am-91v"/>
+                        <outlet property="imageButton" destination="eFV-Zs-A9z" id="9vI-Po-m5Y"/>
+                        <outlet property="imageView" destination="EMU-bC-B0h" id="6Nw-tr-KZL"/>
+                        <outlet property="messageLabel" destination="EdK-cp-Eug" id="5Zk-R0-rvP"/>
+                        <outlet property="nameLabel" destination="5Fu-kA-pIW" id="vWO-Ig-W9c"/>
+                        <outlet property="puclishLabel" destination="pZC-pY-gO2" id="dQf-9c-OWS"/>
+                        <outlet property="reloadButton" destination="t4q-Hl-yP2" id="lqp-TT-qKR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lx-63-hO2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.92307692307692" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkbox_false" width="2133" height="2133"/>
+    </resources>
+</document>
